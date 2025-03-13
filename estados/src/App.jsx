@@ -4,6 +4,7 @@ import Contador from './components/Contador'
 import Conversao from './components/Conversao'
 import Conversao2 from './components/Conversao2'
 import Estados from './components/Estados'
+import Psicology from './components/Psicology'
 import Temperatura from './components/Temperatura'
 
 function App() {
@@ -12,10 +13,9 @@ function App() {
 
   return (
     <>
-      <Temperatura/>
-      <Conversao />
-      <Conversao2 />
-      <Estados />
+    <img src="borbol.png" alt="" className='full-screen-image'
+    />
+   <Psicology/>
 
     </>
   )
