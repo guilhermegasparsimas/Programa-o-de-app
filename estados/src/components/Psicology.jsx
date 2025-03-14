@@ -2,17 +2,20 @@ import React from 'react'
 
 function Psicology() {
     return (
+    <header>
         <div className='psicology'>
+            
+            <h2>Psicology Téc</h2>
 
-            <div className='text-left'>
-                Psicology Tec
-            </div>
-            <p></p>
-            <div className='text-1'>
-                Texto pequeno aqui
-            </div>
+        <ul>
+            <a href="">Saiba mais</a>
+        </ul>
 
         </div>
+
+     
+
+    </header>
     )
 }
 

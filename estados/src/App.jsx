@@ -1,4 +1,5 @@
 import './App.css'
+import Anobissexto from './components/Anobissexto'
 import Aviso from './components/Aviso'
 import Contador from './components/Contador'
 import Conversao from './components/Conversao'
@@ -13,10 +14,7 @@ function App() {
 
   return (
     <>
-    <img src="borbol.png" alt="" className='full-screen-image'
-    />
-   <Psicology/>
-
+    <Psicology/>
     </>
   )
 

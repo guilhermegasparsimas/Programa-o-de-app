@@ -2,7 +2,6 @@
   max-width: 1280px;
   margin: 0 auto;
   padding: 2rem;
-  text-align: center;
 }
 
 .logo {
@@ -68,4 +67,30 @@
   margin: 40x;
   color: rgb(188, 221, 231);
   text-align: center;
+}
+
+h1{
+color: rgb(132, 144, 12);
+}
+
+
+.lerAno{
+  color: rgb(132, 144, 12);
+  border-radius: 20px;
+  border-color: rgb(132, 144, 12);
+  padding: 20px;
+}
+
+.lerAno:hover{
+  background-color: rgb(132, 144, 12);
+  color: white;
+  opacity: 1;
+  transition: transform 0.6s;
+}
+
+.header{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
 }
