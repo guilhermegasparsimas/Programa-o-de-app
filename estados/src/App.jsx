@@ -6,16 +6,16 @@ import Conversao from './components/Conversao'
 import Conversao2 from './components/Conversao2'
 import Estados from './components/Estados'
 import Psicology from './components/Psicology'
+import Relogio from './components/Relogio'
 import Temperatura from './components/Temperatura'
+
 
 function App() {
 
-
-
   return (
-    <>
-    <Psicology/>
-    </>
+    <div>
+   <Relogio/>
+    </div>
   )
 
 }

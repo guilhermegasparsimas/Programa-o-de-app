@@ -87,10 +87,3 @@ color: rgb(132, 144, 12);
   opacity: 1;
   transition: transform 0.6s;
 }
-
-.header{
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-}
