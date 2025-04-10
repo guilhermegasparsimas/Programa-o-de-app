@@ -1,0 +1,27 @@
+.container-calculadeira{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.resultado{
+    color: rgb(165, 255, 31);
+    font-size: 25px;
+}
+
+#text-calculadeira{
+    color: rgb(165, 255, 31);
+    font-size: 35px;
+    
+}
+
+.buttons{
+    color: rgb(165, 255, 31);
+    border: solid 1px;
+}
+
+.buttons:hover{
+    background-color: rgb(95, 163, 55);
+    color: black;
+    border: solid 1px;
+    transition: 0.8s;
+}
