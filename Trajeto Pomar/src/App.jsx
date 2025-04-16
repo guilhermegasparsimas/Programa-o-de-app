@@ -3,6 +3,7 @@ import './App.css'
 
 function App() {
   const[maca, setMaca] = useState('')
+  const[totalMaca, setTotalMaca] = useState(0)
   const[laranja, setLaranja] = useState('')
   const[bergamota, setBergamota] = useState('')
   const[banana, setBanana] = useState('')
@@ -11,7 +12,7 @@ function App() {
 
   function calcularPrecoFrutas(){
     setTotal(Number(maca * 1.50)  + Number(laranja * 2.00) + Number(bergamota * 1.00) + Number(banana * 1.20) + Number(pera * 0.5))
-
+    setTotalMaca(Number(maca))
   }
   function limparFrutas(){
     setMaca('')
@@ -20,6 +21,7 @@ function App() {
     setBanana('')
     setPera('')
     setTotal('0')
+    setTotalMaca(0)
   }
   return (
 <div className='container-trajeto-pomar'>
@@ -58,13 +60,20 @@ function App() {
     <div className='div-total'>
 
     <label id='text-qtd-frutas'>Quantidade de Frutas Colhidas</label>
-    <label>Maçãs = {maca}</label>
-    <label>Laranjas = {laranja}</label> 
+    
+    {totalMaca >0 && 
+    <div>
+      
+          <label>Maçãs = {maca}</label>
+    {/* <label>Laranjas = {laranja}</label> 
     <label>Bergamotas = {bergamota}</label> 
     <label>Bananas =  {banana}</label>
-    <label>Peras = {pera}</label>
+    <label>Peras = {pera}</label> */}
+    </div>
+}
     <label id='text-valor-total'>Total a pagar = {total}R$</label>
     </div>
+
    </div>
 
 </div>
