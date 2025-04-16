@@ -47,6 +47,10 @@ h1{
   display: flex;
   flex-direction: column;
 }
+.qtd-frutas{
+  display: flex;
+  flex-direction: column;
+}
 #text-qtd-frutas{
   font-size: 25px;
   color: orangered;

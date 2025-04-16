@@ -5,14 +5,22 @@ function App() {
   const[maca, setMaca] = useState('')
   const[totalMaca, setTotalMaca] = useState(0)
   const[laranja, setLaranja] = useState('')
+  const[totalLaranja, setTotalLaranja] = useState(0)
   const[bergamota, setBergamota] = useState('')
+  const[totalBergamota, setTotalBergamota] = useState(0)
   const[banana, setBanana] = useState('')
+  const[totalBanana, setTotalBanana] = useState(0)
   const[pera, setPera] = useState('')
+  const[totalPera, setTotalPera] = useState(0)
   const[total, setTotal] = useState('0')
 
   function calcularPrecoFrutas(){
     setTotal(Number(maca * 1.50)  + Number(laranja * 2.00) + Number(bergamota * 1.00) + Number(banana * 1.20) + Number(pera * 0.5))
     setTotalMaca(Number(maca))
+    setTotalLaranja(Number(laranja))
+    setTotalBergamota(Number(bergamota))
+    setTotalBanana(Number(banana))
+    setTotalPera(Number(pera))
   }
   function limparFrutas(){
     setMaca('')
@@ -22,6 +30,10 @@ function App() {
     setPera('')
     setTotal('0')
     setTotalMaca(0)
+    setTotalLaranja(0)
+    setTotalBanana(0)
+    setTotalBergamota(0)
+    setTotalPera(0)
   }
   return (
 <div className='container-trajeto-pomar'>
@@ -33,11 +45,11 @@ function App() {
   <div className='container-inputs'>
 
     <div className='nome-frutas'>
-    <label>Maçãs 🍎</label>
-    <label>Laranjas 🍊</label>
-    <label>Bergamotas 🍊</label>
-    <label>Bananas 🍌</label>
-    <label>Peras 🍐</label>
+    <label>Maçã R$1,50 🍎</label>
+    <label>Laranja R$2,00 🍊</label>
+    <label>Bergamota R$1,00 🍊</label>
+    <label>Banana R$1,20🍌</label>
+    <label>Pera R$0,50🍐</label>
     </div>
    
     <div className='inputs-frutas'>
@@ -61,16 +73,15 @@ function App() {
 
     <label id='text-qtd-frutas'>Quantidade de Frutas Colhidas</label>
     
-    {totalMaca >0 && 
-    <div>
-      
-          <label>Maçãs = {maca}</label>
-    {/* <label>Laranjas = {laranja}</label> 
-    <label>Bergamotas = {bergamota}</label> 
-    <label>Bananas =  {banana}</label>
-    <label>Peras = {pera}</label> */}
+    <div className='qtd-frutas'>
+    {totalMaca >0 && <label>Maçãs x {maca}</label> }
+    {totalLaranja >0 && <label>Laranjas x {laranja}</label>}
+    {totalBergamota >0 && <label>Bergamotas x {bergamota}</label>}
+    {totalBanana >0 && <label>Bananas x  {banana}</label>}
+     {totalPera >0 && <label>Peras x  {pera}</label>}
     </div>
-}
+
+   
     <label id='text-valor-total'>Total a pagar = {total}R$</label>
     </div>
 
