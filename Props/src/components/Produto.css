@@ -1,0 +1,17 @@
+.container-produto{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    background-color: #ccc;
+    border: 1px solid rgb(46, 148, 85);
+    border-radius: 10px;
+    padding: 10px;
+    width: 200px;
+    height: 300px;
+}
+
+h2{
+    color: black;
+}
