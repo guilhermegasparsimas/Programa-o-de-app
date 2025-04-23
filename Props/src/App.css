@@ -5,6 +5,35 @@
   gap: 20px;
   flex-wrap: wrap;
 }
+  .cards{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  .Form-produto{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    color: white;
+    border: white solid;
+    gap: 10px;
+    border-radius: 10px;
+  }
+#bttn-testar{
+  background-color: black;
+  border: black solid;
+  color: white;
+}
+  #bttn-testar:hover{
+    background-color: #ccc;
+    border: #ccc solid;
+    color: black;
+    transition: 0.8s;
+  }
 
 #root {
   max-width: 1280px;
