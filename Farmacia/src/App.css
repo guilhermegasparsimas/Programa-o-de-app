@@ -9,12 +9,12 @@ flex-direction: column;
   justify-content: space-between;
   align-items: center;
 
-  background-color: var(--cor-4);
+  background-color: var(--cor-2);
   width: 100%;
   height: 85px;
 }
   a{
-    color: white;
+    color: var(--cor-1);
     font-size: 25px;
   }
   #logo{
@@ -33,30 +33,34 @@ flex-direction: column;
   justify-content: space-between;
   height: 800px;
 }
-  .image-comp{
+  #cartoes{
+    height: 200px;
+  }
+  /* .image-comp{
     display: flex;
     justify-content: center;
     margin-top: 10px;
     margin-bottom: 10px;
     gap: 15px;
-  }
+  } */
   .text{
     display: flex;
     flex-direction: column;
 
-    background-color: var(--cor-2);
-
-    width: 40%;
+    background-color: var(--cor-1);
+    color: white;
+    width: 65%;
     align-items: center;
 
     font-size: 30px;
-    gap: 30px;
+    gap: 25px;
   }
   h1{
     color: var(--cor-4);
+    font-size: 40px;
   }
   h6{
-    font-size: 20px;
+    font-size: 30px;
 
   }
   #img-completo{
@@ -70,7 +74,7 @@ flex-direction: column;
     justify-content: space-evenly;
 
     width: 50%;
-    background-color: var(--cor-2);
+    background-color: var(--cor-1);
   }
 
   .right{
@@ -81,6 +85,12 @@ flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
   }
+    .text-2{
+      width: 75%;
+    }
+    #img-camisa{
+      height: 200px;
+    }
     #button{
       border-radius: 10px;
       border-color: var(--cor-4);
@@ -91,9 +101,12 @@ flex-direction: column;
     }
     #button:hover{
       border-radius: 10px solid;
-      border-color: var(--cor-1);
-      background-color: var(--cor-1);
-      color: white;
+      border-color: var(--cor-4);
+      background-color: var(--cor-2);
+      color: var(--cor-4);
+
+      font-size: 15px;
+      transition: 0.8s;
       padding: 25px;
       width: 100%;
     }

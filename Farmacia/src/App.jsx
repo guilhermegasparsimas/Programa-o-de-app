@@ -28,7 +28,7 @@ return (
 
      
       <div>
-        <img src="/img/farmarcia-cartoes.PNG.png" alt="" />
+        <img id='cartoes' src="/img/farmarcia-cartoes.PNG.png" alt="" />
       </div>
         <div className='text'>
 
@@ -43,14 +43,14 @@ return (
         <div>
           <h1>VENHA PARA A INAUGURAÇÂO NO DIA 27-07</h1>
         </div>
-        <div> <h6>Todos que se registrarem e confirmarem sua presença em nosso evento de inauguração,
+        <div className='text-2'> <h6>Todos que se registrarem e confirmarem sua presença em nosso evento de inauguração,
           através do site, ganharão
           uma camiseta como forma de agradecimento por sua presença. Garanta já a sua, e faça parte
           do início de uma nova era, venha conhecer a <label id='far-ver'>FARMÁRCIA</label></h6>
         </div>
 
         <div>
-          <img src="/img/farmarcia-camisetas.PNG.png" alt="" />
+          <img id='img-camisa' src="/img/farmarcia-camisetas.PNG.png" alt="" />
         </div>
 
     <div className='image-comp'>
@@ -61,9 +61,6 @@ return (
 
 </div>
 
-    <div className="baixo">
-      OI
-    </div>
   
   </div>
 
