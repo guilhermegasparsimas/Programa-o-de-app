@@ -11,9 +11,10 @@ return (
   <div className="navbar">
 
     <img id='logo' src="/img/farmarcia-logo-pq.PNG.png" alt="" />
-    <h2>Promoções</h2>
-    <h2>Camisetas</h2>
-    <h2>Sobre</h2>
+    <a href="">Promoções</a>
+    <a href="">Remédios</a>
+    <a href="">Sobre</a>
+    
     <img id='logo' src="/img/farmarcia-logo-pq.PNG.png" alt="" />
   
 
@@ -42,8 +43,8 @@ return (
         <div>
           <h1>VENHA PARA A INAUGURAÇÂO NO DIA 27-07</h1>
         </div>
-        <div> <h6>Todos que se registrarem e confirmarem sua presença em nossa inauguração,
-          através do site, no dia, ganharão
+        <div> <h6>Todos que se registrarem e confirmarem sua presença em nosso evento de inauguração,
+          através do site, ganharão
           uma camiseta como forma de agradecimento por sua presença. Garanta já a sua, e faça parte
           do início de uma nova era, venha conhecer a <label id='far-ver'>FARMÁRCIA</label></h6>
         </div>
