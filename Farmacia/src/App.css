@@ -1,6 +1,7 @@
 .container-farmacia{
 display: flex;
 flex-direction: column;
+min-height: 100vh;
 
 }
 
@@ -31,8 +32,13 @@ flex-direction: column;
   flex-direction: row;
 
   justify-content: space-between;
-  height: 800px;
+  /* height: inherit; */
+  min-height: calc(100vh - 85px);
 }
+
+/* .todos{
+} */
+
   #cartoes{
     height: 200px;
   }
@@ -105,10 +111,11 @@ flex-direction: column;
       background-color: var(--cor-2);
       color: var(--cor-4);
 
-      font-size: 15px;
+      /* font-size: 15px; */
       transition: 0.8s;
       padding: 25px;
       width: 100%;
+      cursor: pointer;
     }
     #far-ver{
       color: var(--cor-4);
