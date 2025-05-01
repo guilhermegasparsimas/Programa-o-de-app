@@ -1,0 +1,11 @@
+.container-sorteio{
+    padding: 10px;
+    margin: 25px;
+    border-radius: 10px;
+    border: 2px solid var(--cor-4);
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
