@@ -5,7 +5,7 @@ function Header() {
   return (
     <div className='container-header'>
      <Logo />
-     <h1>Fármarcia</h1>
+     <h1 className='titulo'>Fármarcia</h1>
     </div>
   )
 }

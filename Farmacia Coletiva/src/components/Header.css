@@ -10,3 +10,9 @@
 h1{
     color: var(--cor-2);
 }
+
+.titulo{
+    /* background-color: aqua; */
+    width: 100%;
+    text-align: center;
+}
