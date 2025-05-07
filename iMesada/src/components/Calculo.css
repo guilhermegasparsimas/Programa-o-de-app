@@ -1,0 +1,29 @@
+.container-calculo{
+    min-height: 100vh;
+
+    padding: 10px;
+    margin: 25px;
+    border-radius: 10px;
+    border: 2px solid var(--cor-4);
+    
+}
+
+.conteudo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.bttn{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.relatorio{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
