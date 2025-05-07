@@ -1,0 +1,8 @@
+.container-move{
+    display: flex;
+    flex-direction: row;
+    padding: 5px;
+    gap: 6px;
+
+    border: 2px solid rgb(65, 55, 55);
+}
