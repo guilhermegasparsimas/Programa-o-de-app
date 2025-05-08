@@ -15,31 +15,41 @@ function Calculo() {
     useEffect(() => console.log(nomeMovimentacao), [nomeMovimentacao])
 
     function aumentarSaldo(){
-        setSaldo(Number(inputValor) + Number(saldo))
-        setInputValor('')
-        
-        let nome={
-            id:Date.now(),
-            movimentacao: inputNome,
-            preco: Number(inputValor),
-            tipo: '(Crédito)'
+        if(inputValor >0 && inputNome != ''){
+
+            setSaldo(Number(inputValor) + Number(saldo))
+            setInputValor('')
+            
+            let nome={
+                id:Date.now(),
+                movimentacao: inputNome,
+                preco: Number(inputValor),
+                tipo: '(Crédito)'
+            }
+            setNomeMovimentacao([nome, ...nomeMovimentacao])
+            setInputNome('')
+        }else{
+            alert('Por favor, insira os dados corretamente!')
         }
-        setNomeMovimentacao([nome, ...nomeMovimentacao])
-        setInputNome('')
     }
 
     function diminuirSaldo(){
-        setSaldo(Number(saldo) - Number(inputValor))
-        setInputValor('')
+        if(inputValor >0 && inputNome != ''){
 
-        let nome={
-            id:Date.now(),
-            movimentacao: inputNome,
-            preco: Number(inputValor),
-            tipo: '(Débito)'
+            setSaldo(Number(saldo) - Number(inputValor))
+            setInputValor('')
+    
+            let nome={
+                id:Date.now(),
+                movimentacao: inputNome,
+                preco: Number(inputValor),
+                tipo: '(Débito)'
+            }
+            setNomeMovimentacao([nome, ...nomeMovimentacao])
+            setInputNome('')
+        }else{
+            alert('Por favor, insira os dados corretamente!')
         }
-        setNomeMovimentacao([nome, ...nomeMovimentacao])
-        setInputNome('')
     }
   return (
     <div className='container-calculo'>
