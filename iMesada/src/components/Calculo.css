@@ -1,7 +1,7 @@
 .container-calculo{
     min-height: 100vh;
 
-    padding: 10px;
+    padding: 20px;
     margin: 25px;
     border-radius: 10px;
     border: 2px solid var(--cor-4);
@@ -14,13 +14,21 @@
     align-items: center;
     justify-content: center;
 
-    gap: 10px;
+    gap: 20px;
 }
+    h1{
+        font-size: 55px;
+    }
+    h3{
+        font-size: 30px;
+    }
+    
     .inputs{
         padding: 10px;
         width: 35%;
         border-radius: 10px;
         background-color: rgb(22, 21, 21);
+        border-color: rgb(22, 21, 21);
         color: white;
     }
 
@@ -35,33 +43,37 @@
 }
     #button-credit{
         background-color: rgb(110, 163, 110);
-        padding: 12px;
+        padding: 15px;
         color: white;
         border-radius: 10px;
         border: solid rgb(110, 163, 110);
+        width: 10%;
     }
     #button-credit:hover{
         background-color: rgb(66, 122, 66);
-        padding: 12px;
+        padding: 15px;
         color: white;
         border-radius: 10px;
         border: solid rgb(66, 122, 66);
         cursor: pointer;
+        width: 10%;
     }
     #button-debit{
         background-color: rgb(180, 49, 49);
-        padding: 12px;
+        padding: 15px;
         color: white;
         border-radius: 10px;
         border: solid rgb(180, 49, 49);
+        width: 10%;
     }
     #button-debit:hover{
         background-color: rgb(126, 38, 38);
-        padding: 12px;
+        padding: 15px;
         color: white;
         border-radius: 10px;
         border: solid rgb(126, 38, 38);
         cursor: pointer;
+        width: 10%;
     }
 .relatorio{
     display: flex;
@@ -69,13 +81,16 @@
     align-items: center;
 
     
-}   
+}
+    h2{
+        font-size: 40px;
+    }
 .cards{
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    
+
 
     gap: 8px;
     }

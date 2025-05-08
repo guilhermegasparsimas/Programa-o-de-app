@@ -1,7 +1,7 @@
 import React from 'react'
 import {  useState, useEffect } from 'react'
-import './Calculo.css'
 import Move from './Move'
+import './Calculo.css'
 
 function Calculo() {
     const[inputValor, setInputValor] = useState('')
@@ -45,8 +45,8 @@ function Calculo() {
     <div className='container-calculo'>
         <div className='conteudo'>
         <h1>iMesada</h1>
-        <h2>Controlinho Financeiro</h2>
-        <label >💰 Saldo: R${saldo.toFixed(2)} </label>
+        <h3>Controlinho Financeiro</h3>
+        <h3>💰 Saldo: R${saldo.toFixed(2).replace(".",",")} </h3>
         
         <input className='inputs' placeholder='Nome da Movimentação' type="text" value={inputNome} onChange={(event) => setInputNome(event.target.value)} />
         <input className='inputs' placeholder='Valor' type="text" value={inputValor} onChange={(event) => setInputValor(event.target.value)}/>
@@ -56,7 +56,7 @@ function Calculo() {
             <button id='button-debit' onClick={diminuirSaldo}>Débito</button>
         </div>
         <div className='relatorio'>
-            <h1>📋Kowalski, relatório🐧</h1>
+            <h2>📋Kowalski, relatório🐧</h2>
         </div>
         <div className='cards'>
                 {nomeMovimentacao.map((p) => (
