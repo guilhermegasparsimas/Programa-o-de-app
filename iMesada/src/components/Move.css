@@ -1,13 +1,19 @@
 .container-move{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     padding: 5px;
     gap: 6px;
 
     background-color: aliceblue;
-    border: 1px solid rgb(65, 55, 55);
     border-radius: 10px;
 }
     h4{
         font-size: 20px;
+    }
+
+    .Crédito{
+        border-left: 3px solid rgb(58, 226, 16);
+    }
+    .Débito{
+        border-left: 3px solid rgb(218, 21, 21);
     }

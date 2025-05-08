@@ -24,7 +24,7 @@ function Calculo() {
                 id:Date.now(),
                 movimentacao: inputNome,
                 preco: Number(inputValor),
-                tipo: '(Crédito)'
+                tipo: 'Crédito'
             }
             setNomeMovimentacao([nome, ...nomeMovimentacao])
             setInputNome('')
@@ -43,7 +43,7 @@ function Calculo() {
                 id:Date.now(),
                 movimentacao: inputNome,
                 preco: Number(inputValor),
-                tipo: '(Débito)'
+                tipo: 'Débito'
             }
             setNomeMovimentacao([nome, ...nomeMovimentacao])
             setInputNome('')
