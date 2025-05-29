@@ -40,7 +40,6 @@ function App() {
     setProdutos([produto, ...produtos])
   }
 
-  "1- interface intuitiva e simples" "Comunicação alternativa" "Personalização individual" "Rotinas e estruturas"
   
   return (
     <div className='container-app'>
