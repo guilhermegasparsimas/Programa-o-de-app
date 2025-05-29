@@ -3,7 +3,6 @@ import Home from "../pages/Home";
 import Contato from "../pages/Contato";
 import Generica from "../pages/Generica";
 import Final from "../pages/Final";
-import Melancias from "../pages/Melancias";
 import Login from "../pages/Login";
 
 const router = createBrowserRouter([
@@ -12,7 +11,6 @@ const router = createBrowserRouter([
     {path: "/contato", element: <Contato />},
     {path: "/generica", element: <Generica />},
     {path: "/final", element: <Final />},
-    {path: "/melancias", element: <Melancias />},
 ])
 
 export default router;
