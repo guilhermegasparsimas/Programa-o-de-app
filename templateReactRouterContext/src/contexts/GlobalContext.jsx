@@ -7,17 +7,23 @@ const [usuarios, setUsuarios] = useState([
     {
         id: 0,
         username: 'Gui',
-        password: '1235' 
+        password: '1235',
+        idade: '27' 
+    },
+    {
+        id: 1,
+        username: 'Eduarda',
+        password:'1923',
+        idade: '24'
     },
 ])
 
-let idadeUsuario = '55'
+
 
     return(
         <GlobalContext.Provider value={{
             usuarioLogado,
             setUsuarioLogado,
-            idadeUsuario,
             usuarios,
             setUsuarios,
             }}>
