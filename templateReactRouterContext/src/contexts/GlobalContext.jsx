@@ -16,6 +16,12 @@ const [usuarios, setUsuarios] = useState([
         password:'1923',
         idade: '24'
     },
+    {
+        id: 2,
+        username: 'Mariana',
+        password: '1001',
+        idade: '32'
+    },
 ])
 
 
